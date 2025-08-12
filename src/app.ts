@@ -24,6 +24,10 @@ io.on('connection', socket => {
 
   socket
     .on('client-message-was-sent', (message: string) => {
+      if (typeof message !== 'string') {
+        return
+      }
+
       console.log(message)
       let messageItem = {
         message: message,
