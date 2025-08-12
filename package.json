@@ -1,0 +1,27 @@
+{
+  "name": "chat-socket-io-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start-dev": "nodemon --inspect dist/app.js",
+    "watch-dev": "tsc -w",
+    "build": "tsc",
+    "start": "node dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10",
+    "socket.io": "^4.8.1",
+    "typescript": "~5.8.3"
+  },
+  "devDependencies": {
+    "@it-incubator/prettier-config": "^0.1.2",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.2.1"
+  }
+}
